@@ -1,0 +1,15 @@
+const mongoose = require ('mongoose');
+const { Schema } = mongoose;
+
+const esquema = new Schema({
+	<CAMPO> : { type: String, required: true },
+	...
+	<CAMPO> : { type: {
+		<SUBCAMPO> : { type: String, required: true },
+		...
+	}, required: true },
+});
+
+module.exports = mongoose.model('<NOMBRE_COLECCION_SINGULAR_PRIMERA_MAYUSCULA>', esquema);
+
+

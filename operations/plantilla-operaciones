@@ -1,0 +1,14 @@
+const coleccion = require('<ARCHIVO DE ESQUEMA>');
+const operaciones = {};
+
+operaciones.get___ = async function(req, res) {}
+
+operaciones.get____ = async function(req, res) {}
+
+operaciones.crear____ = async function(req, res) {}
+
+operaciones.actualizar_____ = async function(req, res) {}
+
+operaciones.borrar_____ = async function(req, res) {}
+
+module.exports = operaciones
