@@ -6,6 +6,7 @@ const esquema = new Schema({
 	tipo : { type: String, required: true },
 	precio : { type: Number, required: true },
 	presentacion : { type: String, required: true },
+	cantidad : { type: Number, required: true },
 });
 
 module.exports = mongoose.model('Producto', esquema);
