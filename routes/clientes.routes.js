@@ -8,7 +8,7 @@ const operacion = require('../operations/clientes.operations');
 
 	Ruta base
 	-----------------------------------------
-	'/api/productos'
+	'/api/clientes'
 
 	Puntos de conexión (endpoints)
 	-----------------------------------------
@@ -20,9 +20,9 @@ const operacion = require('../operations/clientes.operations');
 */
 
 router.get('/', 	operacion.getClientes);
-//router.get('/:id', 	operacion.getCliente);
-//router.post('/', 	operacion.crearCliente);
-//router.put("/:id",	operacion.actualizarCliente);
-//router.delete('/:id', operacion.borrarCliente);
+router.get('/:id', 	operacion.getCliente);
+router.post('/', 	operacion.guardarCliente);
+router.put("/:id",	operacion.actualizarCliente);
+router.delete('/:id', operacion.borrarCliente);
 
 module.exports = router
