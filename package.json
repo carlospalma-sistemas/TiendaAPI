@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dbserver": "nodemon index.js"
   },
   "author": "Carlos Palma",
